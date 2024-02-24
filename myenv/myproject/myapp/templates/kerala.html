@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kerala</title>
+    <style>
+        body{ display: flex; flex-wrap: wrap; justify-content: center; background: grey; padding-top: 20px;
+background-image: url(static/images/bali.jpg)
+
+/*background-image: url("static/images/bali10.jpeg");
+/*
+
+/*   https://media.istockphoto.com/vectors/travel-concept-seamless-pattern-abstract-airplane-routes-travel-and-vector-id936346770?k=20&m=936346770&s=612x612&w=0&h=pNoiIGyr4aF7H_gmwI38xlKT4oOCouCYj8Tw0WaKYhI= */
+
+}
+
+.card{margin-top: 50px;
+background: #17141d;
+background: white;
+display: grid;
+grid-template-columns: 300px;
+grid-template-rows: 230px 260px 60px;
+grid-template-areas: "image" "text" "bottom";
+font-family: roboto;
+border-radius: 18px;
+box-shadow: -1rem 0 3rem #000;
+text-align: center;
+overflow: hidden;
+transition: all 0.6s ease;
+  //color: white;
+
+}
+
+.card-img{
+  grid-area: image;
+  background: linear-gradient(#fff0 0%, #fff0, 70%, #1d1d1d 100%),
+  url("static/images/bali7.jpeg");
+  background-size: cover;
+ //border-radius: 0 0 60% 60% /0 0 20% 20%;
+
+}
+
+.card-discription{
+  grid-area: text;
+  font-family: roboto;
+  margin-top: -13px;
+}
+
+.card-discription > p{
+margin: 15px; margin-top: -10px;
+}
+
+#visit-header, #visit-state{
+  font-family: arial;
+  text-transform: uppercase;
+}
+
+#visit-state{font-size: 18px;
+margin-top: -18px; margin-bottom: 20px;
+ color: #aaa;
+}
+
+#booknowbtn{
+// background: #e9443c;
+  background: #54c3dd;
+  background:
+#38596c;
+   //background:
+  linear-gradient(#f2eecb, #cfb997);
+ grid-area: bottom;
+ border: none;
+ font-size: 20px;
+ color: white;
+ margin-top: 30px;
+}
+
+#booknowbtn:hover{cursor: pointer; background: #54c3dd;
+background: #029be6;
+  background: #51a7e1;
+  background: #2e709a;
+}
+
+.card:hover{
+  transform: translateY(-1rem);
+}
+
+.card:hover~.card{
+  transform: translateX(130px);
+}
+
+.card:not(:first-child){
+  margin-left: -130px;
+}
+
+
+
+/* LOCATION IMG */
+
+/* #marin{background-image: url("static/images/bali9.jpeg")} */
+
+
+#kochi{
+  background-position: bottom;
+  background-image: url("static/images/kochi.jpg")}
+
+#munnar{background-image: url("static/images/munnar.jpg")}
+
+#thekkady{background-image: url("static/images/thekkady.jpg")}
+
+#alappey{background-image: url("static/images/alappey.jpg")}
+
+#trivandrum{background-image: url("static/images/tvm.jpg")}
+
+a{text-decoration: none;
+color: white;}
+
+/* RGB */
+
+.rgb::after {
+  content:"";
+  background: linear-gradient(45deg,
+  #ff0000 0%,
+  #ff9a00 10%,
+  #d0de21 20%,
+  #4fdc4a 30%,
+  #3fdad8 40%,
+  #2fc9e2 50%,
+  #1c7fee 60%,
+  #5f15f2 70%,
+  #ba0cf8 80%,
+  #fb07d9 90%,
+  #ff0000 100%  )
+  repeat 0% 0% / 300% 100%;
+  position: absolute;
+  inset: -3px;
+}
+
+@keyframes rgb {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+.rgb::after {
+...
+  border-radius: 16px;
+  filter: blur(8px);
+  transform: translateZ(-1px); /*or z-index */
+  animation: rgb 6s linear infinite;
+}
+
+
+@media(max-width: 900px){
+  body{height: auto;}
+  .card{width: 160px; height: 900px;}
+  .card{font-size: 10px;}
+  .card-img{background-size: cover; width:160px; height: 200px; margin-bottom: 0px;}
+  .card-discription{margin-top: -100px; width:160px;}
+  #visit-header{margin: 2px; margin-bottom: 20px;}
+  #visit-state{margin-bottom: 10px;}
+}
+
+    </style>
+</head>
+<body>
+
+
+  <div class="card">
+  <div class="card-img" id="kochi"> </div>
+  <div class="card-discription">
+    <h2 id="visit-header">COCHIN</h2>
+     <h2 id="visit-state"> Kerala </h2>
+    <p>Popularly known as 'Queen of the Arabian Sea', it is a flourishing port city showcasing a rich blend of mesmerising natural beauty and vibrant culture. Serving as Kerala's commercial, industrial and financial capital, it is the crowning jewel of the state's tourism landscape.</p>
+    </div>
+    <button id="booknowbtn"> <a> Laksyah Travells </a> </button>
+  </div>
+   <div class="card">
+  <div class="card-img" id="munnar"> </div>
+  <div class="card-discription">
+    <h2 id="visit-header">MUNNAR</h2>
+     <h2 id="visit-state"> Kerala </h2>
+    <p>Virgin forests, savannah, rolling hills, scenic valleys, numerous streams, huge splashy waterfalls, sprawling tea plantations and winding walkways are all part of the great holiday experience on offer for a traveler to Munnar.</p>
+    </div>
+    <button id="booknowbtn"> <a> Laksyah Travells </a> </button>
+  </div>
+   <div class="card">
+  <div class="card-img" id="thekkady"> </div>
+  <div class="card-discription">
+    <h2 id="visit-header">THEKKADY</h2>
+     <h2 id="visit-state"> Kerala </h2>
+    <p>Thekkady is famous for the Periyar Tiger Reserve and the host of activities the tiger reserve offers for tourists like boating, jungle camping and trekking inside the reserve.</p>
+    </div>
+    <button id="booknowbtn"> <a> Laksyah Travells </a> </button>
+  </div>
+   <div class="card">
+  <div class="card-img" id="alappey"></div>
+  <div class="card-discription">
+    <h2 id="visit-header">ALAPPEY</h2>
+     <h2 id="visit-state">Kerala</h2>
+    <p>Also well-known as the 'Venice of the East' because of network of canals and waterways, Alappuzha is a district of immense natural beauty. It is embraced by the Arabian Sea in the west and has a network of lakes, lagoons and freshwater rivers criss-crossing it.</p>
+    </div>
+    <button id="booknowbtn"> <a> Laksyah Travells </a> </button>
+  </div>
+ <div class="card">
+  <div class="card-img" id="trivandrum"></div>
+  <div class="card-discription">
+    <h2 id="visit-header">TRIVANDRUM</h2>
+     <h2 id="visit-state">Kerala</h2>
+    <p>Thiruvananthapuram is a major tourist centre, known for the Padmanabhaswamy Temple, the beaches of Kovalam and Varkala, the backwaters of Poovar and Anchuthengu and its Western Ghats tracts of Ponmudi and the Agastya Mala.</p>
+    </div>
+    <button id="booknowbtn"> <a> Laksyah Travells </a> </button>
+ </div>
+
+
+
+
+</body>
+</html>

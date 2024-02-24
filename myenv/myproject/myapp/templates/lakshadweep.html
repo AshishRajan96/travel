@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bali</title>
+    <style>
+        body{ display: flex; flex-wrap: wrap; justify-content: center; background: grey; padding-top: 20px;
+background-image: url(static/images/lakmain.jpg)
+
+
+/*
+
+/*   https://media.istockphoto.com/vectors/travel-concept-seamless-pattern-abstract-airplane-routes-travel-and-vector-id936346770?k=20&m=936346770&s=612x612&w=0&h=pNoiIGyr4aF7H_gmwI38xlKT4oOCouCYj8Tw0WaKYhI= */
+
+}
+
+.card{margin-top: 50px;
+background: #17141d;
+background: white;
+display: grid;
+grid-template-columns: 300px;
+grid-template-rows: 230px 260px 60px;
+grid-template-areas: "image" "text" "bottom";
+font-family: roboto;
+border-radius: 18px;
+box-shadow: -1rem 0 3rem #000;
+text-align: center;
+overflow: hidden;
+transition: all 0.6s ease;
+  //color: white;
+
+}
+
+.card-img{
+  grid-area: image;
+  background: linear-gradient(#fff0 0%, #fff0, 70%, #1d1d1d 100%),
+  url("static/images/lakmain.jpg");
+  background-size: cover;
+ //border-radius: 0 0 60% 60% /0 0 20% 20%;
+
+}
+
+.card-discription{
+  grid-area: text;
+  font-family: roboto;
+  margin-top: -13px;
+}
+
+.card-discription > p{
+margin: 15px; margin-top: -10px;
+}
+
+#visit-header, #visit-state{
+  font-family: arial;
+  text-transform: uppercase;
+}
+
+#visit-state{font-size: 18px;
+margin-top: -18px; margin-bottom: 20px;
+ color: #aaa;
+}
+
+#booknowbtn{
+// background: #e9443c;
+  background: #54c3dd;
+  background:
+#38596c;
+   //background:
+  linear-gradient(#f2eecb, #cfb997);
+ grid-area: bottom;
+ border: none;
+ font-size: 20px;
+ color: white;
+ margin-top: 30px;
+}
+
+#booknowbtn:hover{cursor: pointer; background: #54c3dd;
+background: #029be6;
+  background: #51a7e1;
+  background: #2e709a;
+}
+
+.card:hover{
+  transform: translateY(-1rem);
+}
+
+.card:hover~.card{
+  transform: translateX(130px);
+}
+
+.card:not(:first-child){
+  margin-left: -130px;
+}
+
+
+
+/* LOCATION IMG */
+
+/* #marin{background-image: url("static/images/bali9.jpeg")} */
+
+
+#sb{
+  background-position: bottom;
+  background-image: url("static/images/bali6.jpg")}
+
+#thinnakara{background-image: url("static/images/lak1.jpg")}
+
+#rocky{background-image: url("static/images/lak2.jpg")}
+
+#Agatti{background-image: url("static/images/lak3.jpg")}
+
+#minicoy{background-image: url("static/images/lak6.jpg")}
+
+a{text-decoration: none;
+color: white;}
+
+/* RGB */
+
+.rgb::after {
+  content:"";
+  background: linear-gradient(45deg,
+  #ff0000 0%,
+  #ff9a00 10%,
+  #d0de21 20%,
+  #4fdc4a 30%,
+  #3fdad8 40%,
+  #2fc9e2 50%,
+  #1c7fee 60%,
+  #5f15f2 70%,
+  #ba0cf8 80%,
+  #fb07d9 90%,
+  #ff0000 100%  )
+  repeat 0% 0% / 300% 100%;
+  position: absolute;
+  inset: -3px;
+}
+
+@keyframes rgb {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+.rgb::after {
+...
+  border-radius: 16px;
+  filter: blur(8px);
+  transform: translateZ(-1px); /*or z-index */
+  animation: rgb 6s linear infinite;
+}
+
+
+@media(max-width: 900px){
+  body{height: auto;}
+  .card{width: 160px; height: 900px;}
+  .card{font-size: 10px;}
+  .card-img{background-size: cover; width:160px; height: 200px; margin-bottom: 0px;}
+  .card-discription{margin-top: -100px; width:160px;}
+  #visit-header{margin: 2px; margin-bottom: 20px;}
+  #visit-state{margin-bottom: 10px;}
+}
+
+    </style>
+</head>
+<body>
+
+
+  <div class="card">
+  <div class="card-img" id="thinnakara"> </div>
+  <div class="card-discription">
+    <h2 id="visit-header">Thinnakara Island</h2>
+     <h2 id="visit-state"> Lakshadweep </h2>
+    <p>Get set to experience the beauty of Thinnakara Island! Set sail on a boat from Agatti, making your way across sparkling blue waters. Spend some time by the shore, dip your toes and unwind.As the day draws to a close, board the ferry back to Agatti and then head to your hotel for an overnight stay.</p>
+    </div>
+    <button id="booknowbtn"> <a> Laksyah Travells </a> </button>
+  </div>
+   <div class="card">
+  <div class="card-img" id="rocky"> </div>
+  <div class="card-discription">
+    <h2 id="visit-header">Rocky Island at Kalpitti</h2>
+     <h2 id="visit-state"> Lakshadweep </h2>
+    <p>Your Island, Your Way!Indulge in your desires, whether it's a day of relaxation or thrilling activities. The choice is yours to make on this sun-soaked day.In the evening, join us for an exploration of the nearby Kalpitty Rocky Island, where adventure and beauty collide. Afterward, return for a restful overnight stay in Agatti.Customize your island experience, making memories your way!</p>
+    </div>
+    <button id="booknowbtn"> <a> Laksyah Travells </a> </button>
+  </div>
+   <div class="card">
+  <div class="card-img" id="Agatti"> </div>
+  <div class="card-discription">
+    <h2 id="visit-header">Agatti Island</h2>
+     <h2 id="visit-state">Lakshadweep</h2>
+    <p>Today, spend the day as you like on Agatti Island. You can explore the island on your own or try out optional water activities like scuba diving, snorkelling, and a peaceful glass-bottom boat ride (extra charges apply). Relax on the beach and enjoy the freedom to make the most of your time. Your overnight stay at Agatti promises a wonderful mix of relaxation and adventure</p>
+    </div>
+    <button id="booknowbtn"> <a> Laksyah Travells </a> </button>
+  </div>
+   <div class="card">
+  <div class="card-img" id="minicoy"></div>
+  <div class="card-discription">
+    <h2 id="visit-header">Minicoy Island</h2>
+     <h2 id="visit-state">Lakshadweep</h2>
+    <p>Minicoy is renowned for its tradition dance – the Lava performed on festive occasions. Colourful race boats called “Jahadhoni” are a feast to the eye of any tourist. A large number of men from this island are employed as seamen in ships all over the world. </p>
+    </div>
+    <button id="booknowbtn"> <a> Laksyah Travells </a> </button>
+  </div>
+
+
+
+
+
+</body>
+</html>

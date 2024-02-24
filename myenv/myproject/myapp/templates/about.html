@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Laksyah Travells :: Home</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  	<link rel="stylesheet" href="css/style.css">
+  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+</head>
+<body>
+<style>
+    #about {
+  padding: 50px 0;
+  background:  	#add8e6;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#about h2 {
+  font-size: 2.3rem;
+}
+
+#about p {
+  font-size: 1.2rem;
+  color: black;
+}
+
+#about .small {
+  font-size: 1.2rem;
+  color: #666;
+  font-weight: 600;
+}
+
+.about-img {
+  flex: 1 1 400px;
+  padding: 30px;
+  transform: translateX(150%);
+  animation: about-img-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-img-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+
+.about-text {
+  flex: 1 1 400px;
+  padding: 30px;
+  margin: auto;
+  transform: translate(-150%);
+  animation: about-text-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-text-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+
+.about-img img {
+  display: block;
+  height: 510px;
+  max-width: 100%;
+  margin: auto;
+  object-fit: cover;
+  object-position: right;
+}
+    @import "compass/css3";
+
+body {
+  padding: 10px;
+  background-color: #ececec;
+}
+
+
+
+
+</style>
+<header>
+		<nav class="navbar fixed-top navbar-expand-md navbar-light ">
+			<a class="navbar-brand mb-0 h1"  title="Home PAge">LAKSYAH TRAVELLS</a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        		<span class="navbar-toggler-icon"></span>
+      		</button>
+
+		    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+		  	    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+			        <li class="nav-item active"><a class="nav-link" href="http://127.0.0.1:8000/">Home</a></li>
+				    <li class="nav-item dropdown">
+        				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        					<a class="dropdown-item" href="tripPackets.html">Travel Options</a>
+        					<div class="dropdown-divider"></div>
+					        <a class="dropdown-item" href="bali">Bali - 1 week</a>
+          					<a class="dropdown-item" href="lakshadweep">Lakshadweep -1week</a>
+          			        <a class="dropdown-item" href="kerala">kerala- 1week</a>
+        				</div>
+        			</li>
+				    <li class="nav-item"><a class="nav-link" href="contact">Contact Us</a></li>
+			   	</ul>
+			</div>
+		</nav>
+	</header>
+
+
+ <section id="about">
+      <div class="about-wrapper container">
+        <div class="about-text">
+          <p class="small">About Us</p>
+          <h2> Welcome to Laksyah Travells</h2>
+          <p1>
+              Welcome to Laksyah Travells, where we turn dreams into unforgettable journeys. As a premier travel agency, we specialize in crafting bespoke travel experiences tailored to your desires, ensuring every moment is filled with wonder, excitement, and discovery.
+              At Laksyah Travells, we understand that travel is not just about visiting destinations; it's about immersing yourself in new cultures, creating lifelong memories, and expanding your horizons. With a passion for exploration and a commitment to excellence, we strive to exceed your expectations at every turn.
+              Join us on a journey of discovery, adventure, and unparalleled luxury. Your next great adventure awaits with Laksyah Travells.</p1>
+          <h5>
+              Bringing you the biggest platter of destinations to visit.
+          </h5>
+        </div>
+        <div class="about-img">
+          <img src="static/images/agencyimg.jpg"   alt="agency" />
+        </div>
+      </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bali</title>
+    <style>
+        body{ display: flex; flex-wrap: wrap; justify-content: center; background: grey; padding-top: 20px;
+background-image: url(static/images/bali.jpg)
+
+/*background-image: url("static/images/bali10.jpeg");
+/*
+
+/*   https://media.istockphoto.com/vectors/travel-concept-seamless-pattern-abstract-airplane-routes-travel-and-vector-id936346770?k=20&m=936346770&s=612x612&w=0&h=pNoiIGyr4aF7H_gmwI38xlKT4oOCouCYj8Tw0WaKYhI= */
+
+}
+
+.card{margin-top: 50px;
+background: #17141d;
+background: white;
+display: grid;
+grid-template-columns: 300px;
+grid-template-rows: 230px 260px 60px;
+grid-template-areas: "image" "text" "bottom";
+font-family: roboto;
+border-radius: 18px;
+box-shadow: -1rem 0 3rem #000;
+text-align: center;
+overflow: hidden;
+transition: all 0.6s ease;
+  //color: white;
+
+}
+
+.card-img{
+  grid-area: image;
+  background: linear-gradient(#fff0 0%, #fff0, 70%, #1d1d1d 100%),
+  url("static/images/bali7.jpeg");
+  background-size: cover;
+ //border-radius: 0 0 60% 60% /0 0 20% 20%;
+
+}
+
+.card-discription{
+  grid-area: text;
+  font-family: roboto;
+  margin-top: -13px;
+}
+
+.card-discription > p{
+margin: 15px; margin-top: -10px;
+}
+
+#visit-header, #visit-state{
+  font-family: arial;
+  text-transform: uppercase;
+}
+
+#visit-state{font-size: 18px;
+margin-top: -18px; margin-bottom: 20px;
+ color: #aaa;
+}
+
+#booknowbtn{
+// background: #e9443c;
+  background: #54c3dd;
+  background:
+#38596c;
+   //background:
+  linear-gradient(#f2eecb, #cfb997);
+ grid-area: bottom;
+ border: none;
+ font-size: 20px;
+ color: white;
+ margin-top: 30px;
+}
+
+#booknowbtn:hover{cursor: pointer; background: #54c3dd;
+background: #029be6;
+  background: #51a7e1;
+  background: #2e709a;
+}
+
+.card:hover{
+  transform: translateY(-1rem);
+}
+
+.card:hover~.card{
+  transform: translateX(130px);
+}
+
+.card:not(:first-child){
+  margin-left: -130px;
+}
+
+
+
+/* LOCATION IMG */
+
+/* #marin{background-image: url("static/images/bali9.jpeg")} */
+
+
+#sb{
+  background-position: bottom;
+  background-image: url("static/images/bali6.jpg")}
+
+#marin{background-image: url("static/images/bali10.jpeg")}
+
+#yosemite{background-image: url("static/images/bali8.jpeg")}
+
+#alas{background-image: url("static/images/bali9.jpeg")}
+
+#bud{background-image: url("static/images/bali10.jpeg")}
+
+a{text-decoration: none;
+color: white;}
+
+/* RGB */
+
+.rgb::after {
+  content:"";
+  background: linear-gradient(45deg,
+  #ff0000 0%,
+  #ff9a00 10%,
+  #d0de21 20%,
+  #4fdc4a 30%,
+  #3fdad8 40%,
+  #2fc9e2 50%,
+  #1c7fee 60%,
+  #5f15f2 70%,
+  #ba0cf8 80%,
+  #fb07d9 90%,
+  #ff0000 100%  )
+  repeat 0% 0% / 300% 100%;
+  position: absolute;
+  inset: -3px;
+}
+
+@keyframes rgb {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+.rgb::after {
+...
+  border-radius: 16px;
+  filter: blur(8px);
+  transform: translateZ(-1px); /*or z-index */
+  animation: rgb 6s linear infinite;
+}
+
+
+@media(max-width: 900px){
+  body{height: auto;}
+  .card{width: 160px; height: 900px;}
+  .card{font-size: 10px;}
+  .card-img{background-size: cover; width:160px; height: 200px; margin-bottom: 0px;}
+  .card-discription{margin-top: -100px; width:160px;}
+  #visit-header{margin: 2px; margin-bottom: 20px;}
+  #visit-state{margin-bottom: 10px;}
+}
+
+    </style>
+</head>
+<body>
+
+
+  <div class="card">
+  <div class="card-img" id="marin"> </div>
+  <div class="card-discription">
+    <h2 id="visit-header">Day at Leisure</h2>
+     <h2 id="visit-state"> Bali </h2>
+    <p> Day at Leisure | Optional activity - Relax at some Beach Club or indulge in thrilling Watersports activities. </p>
+    </div>
+    <button id="booknowbtn"> <a> Laksyah Travells </a> </button>
+  </div>
+   <div class="card">
+  <div class="card-img" id="yosemite"> </div>
+  <div class="card-discription">
+    <h2 id="visit-header">Explore West Nusa Penida Island </h2>
+     <h2 id="visit-state"> Bali </h2>
+    <p> West Island tour is a full day tour to the West Nusa Penida , the guest will get a magical nature view with four points which is Kelingking Beach, Angel Billabong, Broken beach and Crystal Bay. Our team will lead all the guest to all these destinations point and take their picture and will share to the guest at the end of the tour, it will include lunch and great venue.  </p>
+    </div>
+    <button id="booknowbtn"> <a> Laksyah Travells </a> </button>
+  </div>
+   <div class="card">
+  <div class="card-img" id="sb"> </div>
+  <div class="card-discription">
+    <h2 id="visit-header"> Day at Leisure | Optional: Enjoy at Atlas Beach Club </h2>
+     <h2 id="visit-state"> Bali </h2>
+    <p> Day at Leisure | Escape to paradise at Atlas Beach Club, the ultimate coastal experience with pristine sands, exclusive loungers, & tropical cocktails - Free Entrance to Atlas Beach Club is valid – *Terms & conditions Apply* </p>
+    </div>
+    <button id="booknowbtn"> <a> Laksyah Travells </a> </button>
+  </div>
+   <div class="card">
+  <div class="card-img" id="alas"></div>
+  <div class="card-discription">
+    <h2 id="visit-header"> Enjoy at Alas Harum Swing and Watch Sunset at Tanah Lot Tour </h2>
+     <h2 id="visit-state"> Bali </h2>
+    <p> Enjoy moments of bliss amidst the wilderness on the Alas Harum Swing, which is one of the premium swings of Bali. Pose for social-media-worthy photos at this popular spot and grab panoramic views of the rice paddies from above. Afterwars, move to soak in the divine beauty of Tanah Lot on this sunset tour! </p>
+    </div>
+    <button id="booknowbtn"> <a> Laksyah Travells </a> </button>
+  </div>
+ <div class="card">
+  <div class="card-img" id="ubud"> </div>
+  <div class="card-discription">
+    <h2 id="visit-header"> Explore Ubud  (Kintamani, Monkey Forest, Tegenungan Waterfall) </h2>
+     <h2 id="visit-state"> Bali</h2>
+    <p> Take in the magnificent sites of Bali as you head out for an exciting full-day tour. Make your way to the charming Celuk Village, known for producing exquisite gold and silver works.  </p>
+    </div>
+    <button id="booknowbtn"> <a> Laksyah Travells </a> </button>
+ </div>
+
+
+
+
+</body>
+</html>
